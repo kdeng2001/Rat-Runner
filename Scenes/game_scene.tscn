@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://6ylbxh81o35v" path="res://Scenes/floor.tscn" id="2_655i8"]
 
 [node name="GameScene" type="Node2D"]
+position = Vector2(-1, -1)
 
 [node name="Player" parent="." instance=ExtResource("1_pyab5")]
 position = Vector2(480, 424)

@@ -11,9 +11,16 @@ scale = Vector2(7, 7)
 disable_mode = 2
 script = ExtResource("2_xdegw")
 
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-1.42857, -3.71428)
+rotation = 1.5708
+scale = Vector2(1, 1)
+
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 scale = Vector2(1, 1)
 texture = ExtResource("2_o8nhe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-1.42857, -3.71429)
+rotation = 1.5708
 shape = ExtResource("1_af5fo")

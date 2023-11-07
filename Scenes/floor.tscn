@@ -1,13 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://6ylbxh81o35v"]
+[gd_scene load_steps=3 format=3 uid="uid://6ylbxh81o35v"]
 
+[ext_resource type="Texture2D" uid="uid://chtelro6vhhb2" path="res://Sprites/icon.svg" id="1_r2vp1"]
 [ext_resource type="Shape2D" uid="uid://5l0j1qs3xsfh" path="res://Shapes/floor_shape_2d.tres" id="1_urybr"]
 
 [node name="floor" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
 position = Vector2(-1, 0)
+scale = Vector2(17.38, 1)
+texture = ExtResource("1_r2vp1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-0.50001, -1)
 scale = Vector2(17.38, 1)
 shape = ExtResource("1_urybr")
 debug_color = Color(0.647059, 0.333333, 1, 0.419608)
